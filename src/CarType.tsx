@@ -19,10 +19,11 @@ export const TopRaiting = (props: PropsType) => {
             <table>
                     <tr>
                         <td>{props.name}</td>
-                        {props.facture.map((t) => {
+                        {props.facture.map((t, index) => {
                                 return (
-                                    <td>
-                                        {t.manufacturer}
+                            <td key={index}>
+                                <div>{index+1}</div>
+                                {t.manufacturer}
                                     </td>
                                 )
                             }
@@ -31,10 +32,10 @@ export const TopRaiting = (props: PropsType) => {
                     </tr>
                 <tr>
                     <td>{props.modelCar}</td>
-                        {props.facture.map((t) => {
+                        {props.facture.map((p,index) => {
                                 return (
-                                    <td>
-                                        {t.model}
+                                    <td key={index}>
+                                        {p.model}
                                     </td>
                                 )
                             }

@@ -47,3 +47,7 @@ td {
   padding: 5px;
   border-collapse: collapse;
 }
+div {
+  color: darkmagenta;
+  padding: inherit;
+}
