@@ -14,7 +14,7 @@ function App() {
   ]
   return (
     <div className="App">
-     <TopRaiting name={"Best cars"} facture={topCars} model={topCars}/>
+     <TopRaiting modelCar={"Model type"} name={"Best cars"} facture={topCars} model={topCars}/>
     </div>
   );
 }
